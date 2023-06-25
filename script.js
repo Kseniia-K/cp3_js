@@ -11,58 +11,57 @@ bookClass[1].style.display = "none";
 bookGenres[0].style.display = "none";
 bookGenres[1].style.display = "none";
 
-let fbm = true;
+let clkBookPlus = true;
 
 books.addEventListener("click", () => {
-
-    if (fbm == true) {
+    if (clkBookPlus == true) {
         bookClass[0].style.display = "block";
         bookClass[1].style.display = "block";
-        bookPlus.innerText = "-";
-        fbm = false;
+        bookPlus.textContent = "-";
+        clkBookPlus = false;
     }
     else {
         bookClass[0].style.display = "none";
         bookClass[1].style.display = "none";
-        bookPlus.innerText = "+";
-        fbm = true;
+        bookPlus.textContent = "+";
+        clkBookPlus = true;
     }
 });
 
-let fbto = true;
+let clkBookPlusHome = true;
 
 bookClass[0].addEventListener("click", () => {
 
-    if (fbto == true) {
+    if (clkBookPlusHome == true) {
         bookGenres[0].style.display = "block";
-        bookPlusHome.innerText = "-";
-        fbto = false;
-        fbm = true;
+        bookPlusHome.textContent = "-";
+        clkBookPlusHome = false;
+        clkBookPlus = true;
     }
     else {
         bookGenres[0].style.display = "none";
-        bookPlusHome.innerText = "+";
-        fbto = true;
-        fbm = true;
+        bookPlusHome.textContent = "+";
+        clkBookPlusHome = true;
+        clkBookPlus = true;
     }
 
 });
 
-let fbtz = true;
+let clkBookPlusAbroad = true;
 
 bookClass[1].addEventListener("click", () => {
     bookClass[1].style.display = "block";
-    if (fbtz == true) {
+    if (clkBookPlusAbroad == true) {
         bookGenres[1].style.display = "block";
-        bookPlusAbroad.innerText = "-";
-        fbtz = false;
-        fbm = true;
+        bookPlusAbroad.textContent = "-";
+        clkBookPlusAbroad = false;
+        clkBookPlus = true;
     }
     else {
         bookGenres[1].style.display = "none";
-        bookPlusAbroad.innerText = "+";
-        fbtz = true;
-        fbm = true;
+        bookPlusAbroad.textContent = "+";
+        clkBookPlusAbroad = true;
+        clkBookPlus = true;
     }
 });
 
@@ -79,53 +78,53 @@ dvdClass[1].style.display = "none";
 dvdGenres[0].style.display = "none";
 dvdGenres[1].style.display = "none";
 
-let fdm = true;
+let clkDvdPlus = true;
 
 dvds.addEventListener("click", () => {
-    if (fdm == true) {
+    if (clkDvdPlus == true) {
         dvdClass[0].style.display = "block";
         dvdClass[1].style.display = "block";
-        dvdPlus.innerText = "-";
-        fdm = false;
+        dvdPlus.textContent = "-";
+        clkDvdPlus = false;
     }
     else {
         dvdClass[0].style.display = "none";
         dvdClass[1].style.display = "none";
-        dvdPlus.innerText = "+";
-        fdm = true;
+        dvdPlus.textContent = "+";
+        clkDvdPlus = true;
     }
 });
 
-let fdto = true;
+let clkDvdPlusHome = true;
 
 dvdClass[0].addEventListener("click", () => {
-    if (fdto == true) {
+    if (clkDvdPlusHome == true) {
         dvdGenres[0].style.display = "block";
-        dvdPlusHome.innerText = "-";
-        fdto = false;
-        fdm = true;
+        dvdPlusHome.textContent = "-";
+        clkDvdPlusHome = false;
+        clkDvdPlus = true;
     }
     else {
         dvdGenres[0].style.display = "none";
-        dvdPlusHome.innerText = "+";
-        fdto = true;
-        fdm = true;
+        dvdPlusHome.textContent = "+";
+        clkDvdPlusHome = true;
+        clkDvdPlus = true;
     }
 });
 
-let fdtz = true;
+let clkDvdPlusAbroad = true;
 
 dvdClass[1].addEventListener("click", () => {
-    if (fdtz == true) {
+    if (clkDvdPlusAbroad == true) {
         dvdGenres[1].style.display = "block";
-        dvdPlusAbroad.innerText = "-";
-        fdtz = false;
-        fdm = true;
+        dvdPlusAbroad.textContent = "-";
+        clkDvdPlusAbroad = false;
+        clkDvdPlus = true;
     }
     else {
         dvdGenres[1].style.display = "none";
-        dvdPlusAbroad.innerText = "+";
-        fdtz = true;
-        fdm = true;
+        dvdPlusAbroad.textContent = "+";
+        clkDvdPlusAbroad = true;
+        clkDvdPlus = true;
     }
 });
